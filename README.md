@@ -24,7 +24,7 @@ cd Phone_Tracking
 python3 -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-python src/phone_tracker.py
+python src/tracking.py
 
 # Menü → 3 (Demo Modu) ile hemen test et!
 
