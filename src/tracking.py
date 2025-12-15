@@ -1069,20 +1069,20 @@ class AdvancedPhoneTracker:
 {self.colors['blue']}
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║                                                                              ║
-║    ███████╗██╗   ██╗██████╗  ██████╗  ██████╗ ██████╗  ██████╗ ███████╗    ║
-║    ██╔════╝██║   ██║██╔══██╗██╔════╝ ██╔═══██╗██╔══██╗██╔═══██╗██╔════╝    ║
-║    █████╗  ██║   ██║██████╔╝██║  ███╗██║   ██║██████╔╝██║   ██║███████╗    ║
-║    ██╔══╝  ██║   ██║██╔══██╗██║   ██║██║   ██║██╔══██╗██║   ██║╚════██║    ║
-║    ██║     ╚██████╔╝██████╔╝╚██████╔╝╚██████╔╝██║  ██║╚██████╔╝███████║    ║
-║    ╚═╝      ╚═════╝ ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝    ║
+║    ███████╗██╗   ██╗██████╗  ██████╗  ██████╗ ██████╗  ██████╗ ███████╗      ║
+║    ██╔════╝██║   ██║██╔══██╗██╔════╝ ██╔═══██╗██╔══██╗██╔═══██╗██╔════╝      ║
+║    █████╗  ██║   ██║██████╔╝██║  ███╗██║   ██║██████╔╝██║   ██║███████╗      ║
+║    ██╔══╝  ██║   ██║██╔══██╗██║   ██║██║   ██║██╔══██╗██║   ██║╚════██║      ║
+║    ██║     ╚██████╔╝██████╔╝╚██████╔╝╚██████╔╝██║  ██║╚██████╔╝███████║      ║
+║    ╚═╝      ╚═════╝ ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝      ║
 ║                                                                              ║
-║                  {self.colors['yellow']}G E L İ Ş M İ Ş   T A K İ P   S İ S T E M İ{self.colors['blue']}                 ║
+║{self.colors['yellow']}G E L İ Ş M İ Ş   T A K İ P   S İ S T E M İ{self.colors['blue']}                 ║
 ║                                                                              ║
-║    {self.colors['cyan']}► Yapay Zeka Destekli{self.colors['blue']}                                             ║
-║    {self.colors['cyan']}► Blockchain Güvenliği{self.colors['blue']}                                          ║
-║    {self.colors['cyan']}► IoT Entegrasyonu{self.colors['blue']}                                              ║
-║    {self.colors['cyan']}► Edge Computing{self.colors['blue']}                                                 ║
-║    {self.colors['cyan']}► API'siz Çalışır{self.colors['blue']}                                                ║
+║    {self.colors['cyan']}► Yapay Zeka Destekli{self.colors['blue']}           ║                                  ║
+║    {self.colors['cyan']}► Blockchain Güvenliği{self.colors['blue']}          ║                               ║
+║    {self.colors['cyan']}► IoT Entegrasyonu{self.colors['blue']}              ║                               ║
+║    {self.colors['cyan']}► Edge Computing{self.colors['blue']}                ║                                ║
+║    {self.colors['cyan']}► API'siz Çalışır{self.colors['blue']}               ║                                ║
 ║                                                                              ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 {self.colors['reset']}
