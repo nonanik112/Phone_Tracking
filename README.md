@@ -159,7 +159,7 @@ advanced_phone_tracker/
 
 ## APİ 
 <img width="744" height="295" alt="Image" src="https://github.com/user-attachments/assets/c611332f-bea2-4186-a027-e7e35a4babca" />
-##
+
 
 Bu proje **BY MIT License** ile lisanslanmıştır.
 
