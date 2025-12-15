@@ -27,8 +27,7 @@ pip install -r requirements.txt
 python src/phone_tracker.py
 # Menü → 3 (Demo Modu) ile hemen test et!
 
-📸 Ekran Görüntüsü
-docs/demo.gif
+
 🛠️ Gereksinimler
 
     Python ≥ 3.9
