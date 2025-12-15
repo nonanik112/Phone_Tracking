@@ -1,176 +1,109 @@
-# 📍 Advanced Phone Tracker
+<!-- ========== TÜRKÇE ========== -->
+# 📡 Gelişmiş Telefon Takip Sistemi (API’siz + AI + Blockchain)
 
-> **AI + Blockchain + IoT destekli, çevrimdışı çalışabilen gelişmiş konum takip ve analiz aracı**
+> **Hiçbir harici API'ye bağımlı olmadan** çalışan, **yapay zeka destekli**, **blockchain güvenlikli** ve **IoT sensör füzyonlu** gerçek zamanlı cihaz takip platformu.
 
-![Banner](docs/images/banner.png)
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Win%20%7C%20macOS-lightgrey.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+<img width="1449" height="286" alt="Image" src="https://github.com/user-attachments/assets/ab8b72d6-f3a3-4362-9e98-fc726d903326" />
 
----
+![Image](https://github.com/user-attachments/assets/924c7c73-c9d5-42e0-bb6f-bc0722f262d8)
 
-## 🚀 Genel Bakış
+## ✨ Öne Çıkan Özellikler
+- **🧠 Yapay Zeka**: LSTM ile gelecek konum tahmini, IsolationForest anomali tespiti
+- **⛓️ Blockchain**: SHA-256 hash, değiştirilemez konum kaydı
+- **📡 IoT Füzyonu**: GPS seri, Wi-Fi triangülasyon, Bluetooth proximity, QR kamera, ses finger-print
+- **⚡ Edge Computing**: <100 ms gecikme, çevrimdışı mod
+- **🔐 Güvenlik**: AES-256 Fernet şifreleme, yerel depolama
+- **📊 Otomatik Rapor**: HTML + PNG, 7 günlük detay
 
-**Advanced Phone Tracker**, Python ile geliştirilmiş; çoklu sensör füzyonu, yapay zeka destekli analiz ve blockchain tabanlı veri bütünlüğünü tek bir mimaride birleştiren ileri seviye bir konum takip sistemidir.
-
-* 🌐 **İnternetsiz (offline) çalışır**
-* ⚡ **Edge Computing** ile düşük gecikme
-* 🔐 **Uçtan uca şifreleme**
-* 📊 **Otomatik raporlama & görselleştirme**
-
----
-
-## 🧩 Mimari Genel Görünüm
-
-![Architecture](docs/images/architecture.png)
-
-```text
-Sensörler → Füzyon Katmanı → AI Analiz → Blockchain Kayıt → SQLite DB → Raporlama
-```
-
----
-
-## 🛠️ Modüller ve Teknik Detaylar
-
-| Modül                 | Teknik Detay                                              | Açıklama                                                 |
-| --------------------- | --------------------------------------------------------- | -------------------------------------------------------- |
-| **🧠 Yapay Zeka**     | LSTM + IsolationForest                                    | Gelecek konum tahmini, anomali tespiti, davranış analizi |
-| **⛓️ Blockchain**     | SHA-256, Proof-of-Work                                    | Değiştirilemez konum kaydı, veri bütünlüğü               |
-| **📡 IoT Füzyonu**    | GPS, Wi‑Fi, Bluetooth, Kamera, Ses                        | Çoklu sensörden tek doğruluklu konum                     |
-| **⚡ Edge Computing**  | Lokal işlem, ~100 ms gecikme                              | API’siz, hızlı, çevrimdışı çalışabilir                   |
-| **🔐 Güvenlik**       | AES-256 (Fernet)                                          | Konum verisi uçtan uca şifreli                           |
-| **🗃️ Veritabanı**    | SQLite + WAL                                              | 10M+ kayıt, indeksli, raporlama hazır                    |
-| **📊 Görselleştirme** | Matplotlib + Seaborn                                      | Harita, hız grafiği, anomali zaman çizelgesi             |
-| **📄 Raporlama**      | Otomatik HTML + PNG                                       | 7 günlük detaylı rapor, mail uyumlu                      |
-| **🔌 Sensörler**      | GPS, Wi‑Fi triangulation, BT proximity, QR Kamera, Ses FP | Gerçek donanım okuması                                   |
-| **🤖 Otomasyon**      | threading + asyncio                                       | 30 sn döngü, CPU dostu                                   |
-| **💰 Maliyet**        | 0 $                                                       | MIT Lisansı, sınırsız kullanım                           |
-
----
-
-## 📦 Kurulum
-
-### 1️⃣ Python Bağımlılıkları
-
+## 🚀 Hızlı Başlangıç
 ```bash
-pip install numpy pandas scikit-learn torch cryptography colorama \
-            opencv-python pillow sounddevice matplotlib seaborn \
-            geopy pyserial pybluez wifi scipy aiohttp
-```
+git clone https://github.com/nonanik112/Phone_Tracking.git
+cd Phone_Tracking
+python3 -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python src/phone_tracker.py
+# Menü → 3 (Demo Modu) ile hemen test et!
 
-### 2️⃣ Linux Sistem Paketleri
+📸 Ekran Görüntüsü
+docs/demo.gif
+🛠️ Gereksinimler
 
-```bash
-sudo apt-get install bluetooth libbluetooth-dev
-```
+    Python ≥ 3.9
+    GPS dongle (opsiyonel)
+    Bluetooth 4.0+ (opsiyonel)
+    Kamera (opsiyonel)
+
+🔌 Opsiyonel API (İstersen)
+
+    Google Maps Platform: 10.000 ücretsiz/ay
+    OpenCage: 75.000 ücretsiz/ay
+    Mapbox: 50.000 ücretsiz/ay
+
+📄 Lisans
+MIT – ticari kullanım serbest.
+<!-- ========== ENGLISH ========== -->
+📡 Advanced Phone Tracking System (API-Free + AI + Blockchain)
+
+    Real-time device tracking platform without any external API, powered by AI, blockchain and IoT sensor fusion.
+
+✨ Key Features
+
+    🧠 AI: LSTM future-location prediction, IsolationForest anomaly detection
+    ⛓️ Blockchain: SHA-256 hash, immutable ledger
+    📡 IoT Fusion: GPS serial, Wi-Fi triangulation, Bluetooth proximity, QR camera, audio finger-print
+    ⚡ Edge Computing: <100 ms latency, offline mode
+    🔐 Security: AES-256 Fernet encryption, local storage
+    📊 Auto Report: HTML + PNG, 7-day detailed
+
+🚀 Quick Start
+bash
+Copy
+
+git clone https://github.com/nonanik112/Phone_Tracking.git
+cd Phone_Tracking
+python3 -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python src/phone_tracker.py
+# Menu → 3 (Demo Mode) and enjoy!
+
+📸 Screenshot
+docs/demo.gif
+🛠️ Requirements
+
+    Python ≥ 3.9
+    GPS dongle (optional)
+    Bluetooth 4.0+ (optional)
+    Camera (optional)
+
+🔌 Optional APIs (if you want)
+
+    Google Maps Platform: 10k free/month
+    OpenCage: 75k free/month
+    Mapbox: 50k free/month
+
+📄 License
+MIT – free for commercial use.
+Copy
+
 
 ---
 
-## ▶️ Çalıştırma
+### 🎯 Ekstra 30 Saniye – Görsel & Link
 
-```bash
-python advanced_phone_tracker.py
-```
+1. `docs/demo.gif` yapıştır (basit ekran kaydı bile yeterli).  
+2. `requirements.txt` zaten varsa bağlantısını ver:  
+   ```markdown
+   ## 📦 Dependencies
+   See [requirements.txt](requirements.txt)
 
----
+    LICENSE dosyası yoksa oluştur:
+    bash
 
-## 🎮 Örnek Kullanım Senaryoları
+Copy
 
-### 🧪 1. Demo Modu
-
-Tüm özellikleri tek seferde test eder.
-
-```bash
-python advanced_phone_tracker.py --demo
-```
-
----
-
-### ⏱️ 2. Sürekli Takip
-
-30 dakika boyunca, her **15 saniyede** bir konum kaydı alır.
-
-```bash
-python advanced_phone_tracker.py --track --duration 30 --interval 15
-```
-
----
-
-### 🔍 3. Sensör Testleri
-
-Tüm sensörleri tek tek doğrular.
-
-```bash
-python advanced_phone_tracker.py --sensor-test
-```
-
-![Sensors](docs/images/sensors.png)
-
----
-
-### 📑 4. Rapor Oluşturma
-
-Otomatik HTML + PNG rapor üretir.
-
-```bash
-python advanced_phone_tracker.py --report
-```
-
-![Report](docs/images/report.png)
-
----
-
-## 📊 Üretilen Çıktılar
-
-* 📍 Konum haritası (PNG)
-* 📈 Hız & zaman grafikleri
-* 🚨 Anomali zaman çizelgesi
-* 📄 HTML dashboard raporu
-
----
-
-## 🔐 Güvenlik Mimarisi
-
-![Security](docs/images/security.png)
-
-* AES‑256 Fernet şifreleme
-* Lokal anahtar üretimi
-* Blockchain hash zinciri
-* Değiştirilemez kayıtlar
-
----
-
-## 📁 Proje Yapısı
-
-```text
-advanced_phone_tracker/
-├── advanced_phone_tracker.py
-├── core/
-│   ├── ai_engine.py
-│   ├── sensor_fusion.py
-│   ├── blockchain.py
-│   └── security.py
-├── reports/
-├── database/
-├── docs/images/
-└── README.md
-```
-
----
-
-## 📜 Lisans
-
-## APİ 
-<img width="744" height="295" alt="Image" src="https://github.com/user-attachments/assets/c611332f-bea2-4186-a027-e7e35a4babca" />
-
-
-Bu proje **BY MIT License** ile lisanslanmıştır.
-
-> Tamamen ücretsizdir. Ticari ve kişisel kullanıma açıktır.
-
----
-
-## 👤 Geliştirici Notu
-
-Bu proje **yüksek gizlilik**, **offline çalışma** ve **gerçek sensör verisi** odaklı tasarlanmıştır. Simülasyon veya üçüncü parti API bağımlılığı yoktur.
-
----
-
-⭐ Eğer projeyi beğendiysen yıldızlamayı unutma!
+echo "MIT License" > LICENSE
