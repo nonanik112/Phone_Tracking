@@ -6,9 +6,8 @@
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Win%20%7C%20macOS-lightgrey.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-<img width="1449" height="286" alt="Image" src="https://github.com/user-attachments/assets/ab8b72d6-f3a3-4362-9e98-fc726d903326" />
 
-![Image](https://github.com/user-attachments/assets/924c7c73-c9d5-42e0-bb6f-bc0722f262d8)
+<img width="1449" height="286" alt="Image" src="https://github.com/user-attachments/assets/ab8b72d6-f3a3-4362-9e98-fc726d903326" />
 
 ## ✨ Öne Çıkan Özellikler
 - **🧠 Yapay Zeka**: LSTM ile gelecek konum tahmini, IsolationForest anomali tespiti
