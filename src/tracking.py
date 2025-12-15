@@ -45,24 +45,28 @@ from sklearn.cluster import DBSCAN
 # 🔧 TEMEL AYARLAR VE GÜVENLİK
 # =============================================================================
 
-# ===== AI License Guard (Offline, Per-PC) =====
+# ===== AI License Guard (Zero-Click) =====
 from src.core import AILicense, ai_fingerprint, LockedModel
-import pathlib, torch, os, sys
+import pathlib, torch, os, sys, subprocess
 
-LICENSE_FILE = pathlib.Path("src/data/license.key")
+LICENSE_FILE   = pathlib.Path("src/data/license.key")
+MODEL_PATH     = pathlib.Path("src/models/license_net.pt")
+ENCRYPTED_PATH = pathlib.Path("src/models/weights.pt.enc")
 
-# 1) Yoksa oluştur
+# 1) Model yoksa oluştur (kendi kendine)
+if not MODEL_PATH.exists():
+    subprocess.run([sys.executable, "src/core/build_demo_model.py"], check=True)
+
+# 2) Lisans yoksa oluştur
 if not LICENSE_FILE.exists():
-    fp   = ai_fingerprint()
-    lic  = AILicense("src/models/license_net.pt")
-    code = lic.generate(fp, days=365)
-    LICENSE_FILE.write_text(code)
+    fp  = ai_fingerprint()
+    lic = AILicense(str(MODEL_PATH))
+    LICENSE_FILE.write_text(lic.generate(fp, days=365))
     print("✅ License created:", LICENSE_FILE)
 
-# 2) Geçerli mi?
+# 3) Geçerli mi?
 try:
-    _ = LockedModel(LICENSE_FILE.read_text().strip(),
-                    AILicense("src/models/license_net.pt"))
+    _ = LockedModel(LICENSE_FILE.read_text().strip(), AILicense(str(MODEL_PATH)))
 except RuntimeError as e:
     print("❌", e); sys.exit(1)
 # ===== /Guard =====
