@@ -10,3 +10,7 @@ class LicenseNet(nn.Module):
 
 net = LicenseNet()
 traced = torch.jit.trace(net, torch.randn(1, 16))
+
+openssl enc -aes-256-cbc -salt -in src/models/license_net.pt \
+          -out src/models/weights.pt.enc \
+          -k "$(cat src/data/license.key)"
