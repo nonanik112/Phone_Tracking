@@ -1,5 +1,3 @@
-# Phone_Tracking
-
 # 📍 Advanced Phone Tracker
 
 > **AI + Blockchain + IoT destekli, çevrimdışı çalışabilen gelişmiş konum takip ve analiz aracı**
