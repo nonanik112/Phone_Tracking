@@ -45,6 +45,29 @@ from sklearn.cluster import DBSCAN
 # 🔧 TEMEL AYARLAR VE GÜVENLİK
 # =============================================================================
 
+# ===== AI License Guard (Offline, Per-PC) =====
+from src.core import AILicense, ai_fingerprint, LockedModel
+import pathlib, torch, os, sys
+
+LICENSE_FILE = pathlib.Path("src/data/license.key")
+
+# 1) Yoksa oluştur
+if not LICENSE_FILE.exists():
+    fp   = ai_fingerprint()
+    lic  = AILicense("src/models/license_net.pt")
+    code = lic.generate(fp, days=365)
+    LICENSE_FILE.write_text(code)
+    print("✅ License created:", LICENSE_FILE)
+
+# 2) Geçerli mi?
+try:
+    _ = LockedModel(LICENSE_FILE.read_text().strip(),
+                    AILicense("src/models/license_net.pt"))
+except RuntimeError as e:
+    print("❌", e); sys.exit(1)
+# ===== /Guard =====
+
+
 class SecurityManager:
     """Gelişmiş şifreleme ve güvenlik yönetimi"""
     def __init__(self):
