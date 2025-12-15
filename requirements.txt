@@ -1,0 +1,19 @@
+# ===== Lisans Flow Core =====
+numpy>=1.24.0           # AI finger-print vektör
+pandas>=1.5.0           # LSTM veri hazırlığı
+scikit-learn>=1.3.0     # IsolationForest anomali
+torch==2.0.1+cpu        # CPU-only  (CUDA yok, 200 MB)
+cryptography>=40.0.0    # Fernet şifreleme
+colorama>=0.4.6         # Renkli terminal
+
+# ===== Sensörler (bluetooth’suz) =====
+pyserial>=3.5           # GPS seri port
+opencv-python>=4.7.0    # QR kamera
+sounddevice>=0.4.0      # Ses finger-print
+# bluetooth ATILDI – build hatası yok
+# pybluez veya pybluez2 YOK – graceful fallback var
+
+# ===== Yardımcılar =====
+psutil>=5.9.0           # CPU/MAC finger-print
+geopy>=2.3.0            # Koordinat mesafe
+pathlib2>=2.3.7 ; python_version < "3.4"
