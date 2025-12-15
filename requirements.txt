@@ -17,3 +17,7 @@ sounddevice>=0.4.0      # Ses finger-print
 psutil>=5.9.0           # CPU/MAC finger-print
 geopy>=2.3.0            # Koordinat mesafe
 pathlib2>=2.3.7 ; python_version < "3.4"
+
+Flask==2.3.3
+cryptography==41.0.7
+gunicorn==21.2.0
