@@ -42,7 +42,7 @@ python src/tracking.py
     Mapbox: 50.000 ücretsiz/ay
 
 📄 Lisans
-MIT – ticari kullanım serbest.
+BY_MIT – ticari kullanım serbest.
 <!-- ========== ENGLISH ========== -->
 📡 Advanced Phone Tracking System (API-Free + AI + Blockchain)
 
@@ -104,4 +104,4 @@ Copy
 
 Copy
 
-echo "MIT License" > LICENSE
+echo "BY_MIT License" > LICENSE
