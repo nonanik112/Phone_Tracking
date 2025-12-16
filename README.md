@@ -17,7 +17,8 @@
 - **🔐 Güvenlik**: AES-256 Fernet şifreleme, yerel depolama
 - **📊 Otomatik Rapor**: HTML + PNG, 7 günlük detay
 
-## 🚀 Hızlı Başlangıç
+📸 Screenshot
+<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/d58386bf-696f-4573-af57-557b1c67a434" />## 🚀 Hızlı Başlangıç
 ```bash
 git clone https://github.com/nonanik112/Phone_Tracking.git
 cd Phone_Tracking
@@ -69,8 +70,7 @@ pip install -r requirements.txt
 python src/phone_tracker.py
 # Menu → 3 (Demo Mode) and enjoy!
 
-📸 Screenshot
-docs/demo.gif
+
 🛠️ Requirements
 
     Python ≥ 3.9
