@@ -18,7 +18,10 @@
 - **📊 Otomatik Rapor**: HTML + PNG, 7 günlük detay
 
 📸 Screenshot
-<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/d58386bf-696f-4573-af57-557b1c67a434" />## 🚀 Hızlı Başlangıç
+
+<img width="700" height="466" alt="Image" src="https://github.com/user-attachments/assets/60734cb1-b2e9-4c49-bf7d-7fb75c1420c5" />
+
+## 🚀 Hızlı Başlangıç
 ```bash
 git clone https://github.com/nonanik112/Phone_Tracking.git
 cd Phone_Tracking
