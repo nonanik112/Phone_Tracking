@@ -29,7 +29,7 @@ python3 -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python src/tracking.py
-
+```
 # Menü → 3 (Demo Modu) ile hemen test et!
 
 🛠️ Gereksinimler
@@ -62,6 +62,8 @@ BY_MIT – ticari kullanım serbest.
     📊 Auto Report: HTML + PNG, 7-day detailed
 
 🚀 Quick Start
+```
+
 bash
 Copy
 
@@ -73,7 +75,7 @@ pip install -r requirements.txt
 python src/phone_tracker.py
 # Menu → 3 (Demo Mode) and enjoy!
 
-
+```
 🛠️ Requirements
 
     Python ≥ 3.9
@@ -91,20 +93,19 @@ python src/phone_tracker.py
 MIT – free for commercial use.
 Copy
 
+<img width="700" height="467" alt="Image" src="https://github.com/user-attachments/assets/8ffdef50-9c77-4dc4-8e6b-7bb50fcb934d" />
 
----
 
 ### 🎯 Ekstra 30 Saniye – Görsel & Link
 
 1. `docs/demo.gif` yapıştır (basit ekran kaydı bile yeterli).  
 2. `requirements.txt` zaten varsa bağlantısını ver:  
-   ```markdown
-   ## 📦 Dependencies
-   See [requirements.txt](requirements.txt)
+```markdown
+ ## 📦 Dependencies
+ See [requirements.txt](requirements.txt)
 
-    LICENSE dosyası yoksa oluştur:
-    bash
+ LICENSE dosyası yoksa oluştur: bash
+```
+" echo "BY_MIT License" > LICENSE"
 
-Copy
 
-echo "BY_MIT License" > LICENSE
