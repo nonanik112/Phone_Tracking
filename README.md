@@ -7,6 +7,17 @@
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Win%20%7C%20macOS-lightgrey.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
+## 🔒 Zero-External-API & Legal Boundary
+This tool **never phones home**.  
+- **GPS**: your **own USB-serial dongle** – no Google Maps, no cell-tower query.  
+- **Wi-Fi / Bluetooth**: local `iwlist` / `BlueZ` scans – no cloud triangulation.  
+- **AI models**: offline Torch CPU weights – no HuggingFace, no Torch Hub.  
+- **Maps / geocoding**: rendered by **your own Matplotlib / Folium** – zero external tile server.  
+
+**Result**: **no API key, no cloud bill, no privacy leak** – **fully air-gapped** operation.  
+**Limitation**: accuracy is **lower** than cloud services (≈ 3-15 m GPS, ≈ 30-100 m Wi-Fi) – **but legal and ethical**.  
+**Use only on devices you own or have explicit permission to test** – **academic / pen-test sandbox** by design.
+
 <img width="1449" height="286" alt="Image" src="https://github.com/user-attachments/assets/ab8b72d6-f3a3-4362-9e98-fc726d903326" />
 
 ## ✨ Öne Çıkan Özellikler
