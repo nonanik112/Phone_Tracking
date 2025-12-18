@@ -34,7 +34,7 @@ This tool **never phones home**.
 <img width="700" height="466" alt="Image" src="https://github.com/user-attachments/assets/60734cb1-b2e9-4c49-bf7d-7fb75c1420c5" />
 
 ## 🚀 Hızlı Başlangıç
-```bash
+```
 git clone https://github.com/nonanik112/Phone_Tracking.git
 cd Phone_Tracking
 python3 -m venv venv
@@ -75,7 +75,7 @@ BY_MIT – ticari kullanım serbest.
 
 🚀 Quick Start
 ```
-bash
+
 git clone https://github.com/nonanik112/Phone_Tracking.git
 cd Phone_Tracking
 python3 -m venv venv
