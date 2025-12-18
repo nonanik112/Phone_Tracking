@@ -75,10 +75,7 @@ BY_MIT – ticari kullanım serbest.
 
 🚀 Quick Start
 ```
-
 bash
-Copy
-
 git clone https://github.com/nonanik112/Phone_Tracking.git
 cd Phone_Tracking
 python3 -m venv venv
