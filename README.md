@@ -1,5 +1,6 @@
 <!-- ========== TÜRKÇE ========== -->
 # 📡 Gelişmiş Telefon Takip Sistemi (API’siz + AI + Blockchain)
+Security-focused data analysis and correlation tooling designed for authorized investigations and risk assessment.
 
 > **Hiçbir harici API'ye bağımlı olmadan** çalışan, **yapay zeka destekli**, **blockchain güvenlikli** ve **IoT sensör füzyonlu** gerçek zamanlı cihaz takip platformu.
 
